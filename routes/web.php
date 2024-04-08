@@ -3,11 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return 'home page';
+    return view('home.index',[]);
 })->name('home.index');
 
 Route::get('/contact', function () {
-    return 'contact';
+    return view('home.contact');
 })->name('home.contact');
 
 Route::get('/posts/{id}', function ($id) {
